@@ -21,7 +21,8 @@ if dfs < 10:
     pass
 else:
 
-    image2 = Image.open("Favi2.png")
+    image_path = pathlib.Path(__file__).parent / "Favi2.png"
+    image2 = Image.open(image_path)
 
     st.set_page_config(layout="wide", page_title="LICA LoginError" , page_icon=image2)
 
@@ -4010,6 +4011,7 @@ elif page == "Summary of Results":
 st.markdown(r"""
 ---
 """)
+
 
 
 
