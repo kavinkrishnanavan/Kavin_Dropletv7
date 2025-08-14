@@ -23,10 +23,10 @@ if dfs < 10:
     pass
 else:
 
-    image_path = pathlib.Path(__file__).parent / "Favi2.png"
-    image2 = Image.open(image_path)
+    image_pathbla = pathlib.Path(__file__).parent /"Login app"/ "Favi2.png"
+    imageblabla = Image.open(image_pathbla)
 
-    st.set_page_config(layout="wide", page_title="LICA LoginError" , page_icon=image2)
+    st.set_page_config(layout="wide", page_title="LICA LoginError" , page_icon=imageblabla)
 
     st.markdown("<p style='text-align: right;'><b>🛢️ Liquid in Gas CarryOver Prediction (LICA Version 1.0)</b></p>", unsafe_allow_html=True)
 
@@ -4013,6 +4013,7 @@ elif page == "Summary of Results":
 st.markdown(r"""
 ---
 """)
+
 
 
 
