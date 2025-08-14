@@ -2,7 +2,7 @@ import streamlit as st # pyright: ignore[reportMissingImports]
 from datetime import datetime
 from PIL import Image # type: ignore
 import pathlib
-imagepath2 = pathlib.Path(__file__).parent / "Sep.png"
+imagepath21111111 = pathlib.Path(__file__).parent / "Sep.png"
 with open("u.t", "r") as file:
     u = file.read()
     print(u)
@@ -1030,7 +1030,7 @@ def generate_pdf_report(
     pdf.ln(50)
 
     try:
-        pdf.image(imagepath2, x=pdf.w/2 - 25, y=80, w=50)  # Centered, adjust w as needed
+        pdf.image(imagepath21111111, x=pdf.w/2 - 25, y=80, w=50)  # Centered, adjust w as needed
     except Exception as e:
         print("Could not add Sep.png to PDF:", e)
 
@@ -2428,7 +2428,7 @@ with st.sidebar:
     col1, col2, col3 = st.columns([3, 8, 3])  # Adjust the ratios as needed
 
     with col2:
-        st.image(imagepath2, caption="", width=100)
+        st.image(imagepath21111111, caption="", width=100)
         
 st.sidebar.markdown("<h3 style='font-size: 16px;'><b>Liquid in Gas CarryOver Prediction</b></h3>", unsafe_allow_html=True)
 #st.sidebar.markdown("---")
@@ -4013,6 +4013,7 @@ elif page == "Summary of Results":
 st.markdown(r"""
 ---
 """)
+
 
 
 
