@@ -1,6 +1,7 @@
 import streamlit as st # pyright: ignore[reportMissingImports]
 from datetime import datetime
 from PIL import Image # type: ignore
+imagepath2 = pathlib.Path(__file__).parent / "Sep.png"
 with open("u.t", "r") as file:
     u = file.read()
     print(u)
@@ -1028,7 +1029,7 @@ def generate_pdf_report(
     pdf.ln(50)
 
     try:
-        pdf.image("Sep.png", x=pdf.w/2 - 25, y=80, w=50)  # Centered, adjust w as needed
+        pdf.image(imagepath2, x=pdf.w/2 - 25, y=80, w=50)  # Centered, adjust w as needed
     except Exception as e:
         print("Could not add Sep.png to PDF:", e)
 
@@ -4011,6 +4012,7 @@ elif page == "Summary of Results":
 st.markdown(r"""
 ---
 """)
+
 
 
 
