@@ -2,7 +2,8 @@ import streamlit as st # type: ignore
 from datetime import datetime
 import time
 from PIL import Image # type: ignore
-image = Image.open("Sep.png")
+image_path = pathlib.Path(__file__).parent / "Sep.png"
+image = Image.open(image_path)
 
 image2 = Image.open("Favi2.png")
 
@@ -78,4 +79,5 @@ def login(u , p):
 
 if st.button("Login"):
     print("Pressed")
+
     login(username , password)
