@@ -2428,7 +2428,7 @@ with st.sidebar:
     col1, col2, col3 = st.columns([3, 8, 3])  # Adjust the ratios as needed
 
     with col2:
-        st.image("Sep.png", caption="", width=100)
+        st.image(imagepath2, caption="", width=100)
         
 st.sidebar.markdown("<h3 style='font-size: 16px;'><b>Liquid in Gas CarryOver Prediction</b></h3>", unsafe_allow_html=True)
 #st.sidebar.markdown("---")
@@ -4013,6 +4013,7 @@ elif page == "Summary of Results":
 st.markdown(r"""
 ---
 """)
+
 
 
 
