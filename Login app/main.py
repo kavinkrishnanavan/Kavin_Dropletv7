@@ -5,8 +5,8 @@ import pathlib
 from PIL import Image # type: ignore
 image_path = pathlib.Path(__file__).parent / "Sep.png"
 image = Image.open(image_path)
-
-image2 = Image.open("Favi2.png")
+image_path = pathlib.Path(__file__).parent / "Favi2.png"
+image2 = Image.open(image_path)
 
 st.set_page_config(layout="wide", page_title="LICA Login" , page_icon=image2)
 
@@ -82,4 +82,5 @@ if st.button("Login"):
     print("Pressed")
 
     login(username , password)
+
 
