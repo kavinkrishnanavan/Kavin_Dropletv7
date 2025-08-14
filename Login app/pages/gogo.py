@@ -3,6 +3,8 @@ from datetime import datetime
 from PIL import Image # type: ignore
 import pathlib
 imagepath21111111 = pathlib.Path(__file__).parent / "Sep.png"
+with open("ver.t", "r") as file:
+    veri = file.read()
 with open("u.t", "r") as file:
     u = file.read()
     print(u)
@@ -16,11 +18,18 @@ with open("u.t", "r") as file:
 
     dfs = time_difference.total_seconds()
 
+    file_object_write = open("ver.t", "w")
+
+    file_object_write.write("1")
+
     print(dfs)
 
-if dfs < 10:
+if dfs < 10 or veri == 1:
+
+    veri = 0
 
     pass
+    
 else:
 
     image_pathbla = pathlib.Path(__file__).parent / "Favi2.png"
@@ -4013,6 +4022,7 @@ elif page == "Summary of Results":
 st.markdown(r"""
 ---
 """)
+
 
 
 
